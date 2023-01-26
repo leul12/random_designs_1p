@@ -33,11 +33,14 @@
 
 <script>
     let count = 0;
-    const colors = ["green", "yellow", "red"];
+    const colors = ["green", "#FFFF00", "red"];
+    const buttonColors = ["#4CAF50", "#FFFF00", "#FF0000"];
 
     function changeColor() {
-        const body = document.querySelector("body",);
+        const body = document.querySelector("body");
+        const button = document.querySelector("#button");
         body.style.background = colors[count % colors.length];
+        button.style.background = buttonColors[count % buttonColors.length];
         count++;
     }
 </script>
